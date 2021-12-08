@@ -11,8 +11,6 @@ find . -name "*.java"
 printf "\n>: "
 read -r filename
 
-#if test -f $filename.java; then
-
 # If a previous compiled version exists, then it is deleted
 if test -f "$filename.class"; then
     printf "Old version of %s.class file detected; deleting old version...\n" "$filename"
